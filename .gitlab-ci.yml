@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - mkdir -p public
+    - cp -r index.html styles.css app.js A.txt B.txt C.txt public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - master

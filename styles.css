@@ -1,0 +1,252 @@
+:root {
+  --bg: #091227;
+  --bg2: #111c36;
+  --card: rgba(9, 18, 39, 0.82);
+  --line: rgba(130, 170, 255, 0.28);
+  --text: #e9f1ff;
+  --muted: #9fb3d9;
+  --accent: #5ec4ff;
+  --accent2: #9d7dff;
+  --ok: #8ce99a;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 5%, rgba(94, 196, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 95% 10%, rgba(157, 125, 255, 0.14), transparent 26%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(1320px, calc(100% - 26px));
+  margin: 18px auto 28px;
+}
+
+.hero {
+  margin-bottom: 10px;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag {
+  margin: 0;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(94, 196, 255, 0.2);
+  border: 1px solid rgba(94, 196, 255, 0.35);
+  color: #dff5ff;
+  font-size: 12px;
+}
+
+.lang-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.lang-picker select {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(10, 20, 44, 0.9);
+  color: var(--text);
+  padding: 6px 8px;
+}
+
+h1 {
+  margin: 10px 0 6px;
+  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+}
+
+.sub {
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 12px 30px rgba(3, 8, 22, 0.35);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) 140px auto;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.field small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(10, 20, 44, 0.9);
+  color: var(--text);
+}
+
+.mode-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 2px 0 6px;
+}
+
+.mode-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(10, 20, 44, 0.72);
+  cursor: pointer;
+  user-select: none;
+}
+
+.mode-item input {
+  accent-color: var(--accent2);
+}
+
+.action-row {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid var(--line);
+  background: rgba(40, 61, 108, 0.7);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn:hover {
+  filter: brightness(1.07);
+}
+
+.btn.primary {
+  background: linear-gradient(180deg, var(--accent) 0%, #4b90f4 100%);
+  color: #0b1735;
+  border: 0;
+}
+
+.btn.tiny {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+.grid-3 {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 330px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(7, 15, 34, 0.9);
+  color: var(--text);
+  padding: 10px;
+  line-height: 1.45;
+}
+
+.output {
+  margin-top: 12px;
+}
+
+.stack {
+  display: flex;
+  gap: 6px;
+}
+
+#result-list {
+  margin: 0;
+  padding-left: 22px;
+  min-height: 180px;
+  max-height: 280px;
+  overflow: auto;
+}
+
+#result-list li {
+  padding: 3px 0;
+  border-bottom: 1px dashed rgba(130, 170, 255, 0.2);
+}
+
+.note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 1080px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .action-row {
+    align-items: center;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  textarea {
+    min-height: 220px;
+  }
+}
