@@ -4,95 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      id="meta-description"
       name="description"
-      content="Three-part name randomizer (A+C+B) with editable A/B/C lists and text export."
+      content="Static hub page for apichitstr projects with quick links to published GitHub Pages sites."
     />
-    <title>Name Randomizer (A+C+B)</title>
+    <title>Project Hub</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./app.js"></script>
   </head>
   <body>
-    <main class="app-shell">
-      <header class="hero">
-        <div class="hero-top">
-          <p class="tag" id="tag-text">GitLab Pages Ready</p>
-          <label class="lang-picker" for="lang-select">
-            <span id="lang-label">Language</span>
-            <select id="lang-select" aria-label="Language selector">
-              <option value="en" selected>English</option>
-              <option value="th">ไทย</option>
-            </select>
-          </label>
+    <main class="hub-shell">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">apichitstr GitHub Pages</p>
+          <h1>Project Hub</h1>
+          <p class="hero-text">
+            A simple static landing page that collects links to published pages made before.
+            Open one place, jump to the tool you need.
+          </p>
         </div>
-        <h1 id="main-title">3-Part Name Randomizer</h1>
-        <p class="sub" id="sub-text">
-          Tick <strong>A</strong>, <strong>B</strong>, <strong>C</strong> freely. If all are selected, pattern becomes <strong>A+C+B</strong>.
-        </p>
-      </header>
-
-      <section class="panel controls">
-        <div class="field">
-          <label id="mode-label">Random pattern (A/B/C checkboxes)</label>
-          <div class="mode-group" id="mode-group">
-            <label class="mode-item"><input id="mode-a" type="checkbox" checked /> A</label>
-            <label class="mode-item"><input id="mode-b" type="checkbox" checked /> B</label>
-            <label class="mode-item"><input id="mode-c" type="checkbox" checked /> C</label>
-          </div>
-          <small id="mode-help">Word order is A → C → B (if all selected).</small>
-        </div>
-        <div class="field small">
-          <label id="count-label" for="count">Number of results</label>
-          <input id="count" type="number" min="1" max="100" value="10" />
-        </div>
-        <div class="action-row">
-          <button id="generate-btn" class="btn primary" type="button">Generate</button>
-          <button id="save-draft-btn" class="btn" type="button">Save Draft (this device)</button>
-          <button id="reset-btn" class="btn" type="button">Reload from A/B/C files</button>
+        <div class="hero-badge">
+          <span>Static</span>
+          <span>Fast</span>
+          <span>Free</span>
         </div>
       </section>
 
-      <section class="grid-3">
-        <article class="panel">
-          <div class="panel-head">
-            <h2 id="group-a-title">Group A</h2>
-            <button data-export="A" class="btn tiny" type="button">Save A.txt</button>
+      <section class="links-grid">
+        <a class="link-card featured" href="https://apichitstr.github.io/SLPNameRandomizerGitLabPages/" target="_blank" rel="noreferrer">
+          <div class="card-top">
+            <p class="card-tag">Current</p>
+            <span class="card-arrow">↗</span>
           </div>
-          <textarea id="list-a" spellcheck="false"></textarea>
-        </article>
+          <h2>Name Randomizer</h2>
+          <p>
+            Three-part randomizer with EN/TH language switch and static A/B/C lists.
+          </p>
+          <small>GitHub Pages</small>
+        </a>
 
-        <article class="panel">
-          <div class="panel-head">
-            <h2 id="group-b-title">Group B</h2>
-            <button data-export="B" class="btn tiny" type="button">Save B.txt</button>
+        <a class="link-card" href="https://apichitstr.github.io/sloppeh-gacha-simulator2/" target="_blank" rel="noreferrer">
+          <div class="card-top">
+            <p class="card-tag">Published</p>
+            <span class="card-arrow">↗</span>
           </div>
-          <textarea id="list-b" spellcheck="false"></textarea>
-        </article>
+          <h2>Gacha Simulator Web</h2>
+          <p>
+            Static browser version of the simulator with pity, inventory, and local save.
+          </p>
+          <small>GitHub Pages</small>
+        </a>
 
-        <article class="panel">
-          <div class="panel-head">
-            <h2 id="group-c-title">Group C</h2>
-            <button data-export="C" class="btn tiny" type="button">Save C.txt</button>
+        <a class="link-card" href="https://github.com/apichitstr" target="_blank" rel="noreferrer">
+          <div class="card-top">
+            <p class="card-tag">Account</p>
+            <span class="card-arrow">↗</span>
           </div>
-          <textarea id="list-c" spellcheck="false"></textarea>
-        </article>
+          <h2>GitHub Profile</h2>
+          <p>
+            Open the account page to find more repositories and published projects.
+          </p>
+          <small>GitHub</small>
+        </a>
       </section>
 
-      <section class="panel output">
-        <div class="panel-head">
-          <h2 id="result-title">Generated results</h2>
-          <div class="stack">
-            <button id="export-result-btn" class="btn tiny" type="button">Save result.txt</button>
-            <button id="copy-result-btn" class="btn tiny" type="button">Copy all</button>
-          </div>
-        </div>
-        <ol id="result-list"></ol>
-      </section>
-
-      <section class="note">
-        <p id="note-text">
-          Note: GitLab Pages is a static site, so files cannot be overwritten on the server directly.
-          Save buttons download .txt files to your device.
+      <section class="footer-note">
+        <p>
+          Tip: add more cards here whenever you publish another static page.
         </p>
       </section>
     </main>
