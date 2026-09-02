@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="เครื่องมือแปลงหน่วยออนไลน์สำหรับความยาว น้ำหนัก อุณหภูมิ พื้นที่ และหน่วยที่ใช้ในชีวิตประจำวัน"
+    />
+    <title>แปลงหน่วย | Everyday Convert</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./converter.js"></script>
+  </head>
+  <body>
+    <main class="converter-shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">EVERYDAY CONVERT / STATIC TOOL</p>
+          <h1>แปลงหน่วยให้จบ<br /><em>ในครั้งเดียว</em></h1>
+          <p class="hero-text">เครื่องมือเล็ก ๆ สำหรับงานบ้าน งานเรียน และการเดินทาง คำนวณบนเครื่องของคุณ ไม่ส่งข้อมูลไปที่ไหน</p>
+        </div>
+        <a class="text-link" href="./randomizer.html">Name Randomizer <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="converter-layout" aria-label="เครื่องมือแปลงหน่วย">
+        <div class="tool-panel">
+          <div class="panel-heading">
+            <div><p class="section-kicker">01 / เลือกหมวด</p><h2>ฉันต้องการแปลง</h2></div>
+            <span class="live-dot">ทำงานออฟไลน์</span>
+          </div>
+          <div class="category-tabs" id="category-tabs" role="tablist" aria-label="หมวดหน่วย"></div>
+          <div class="conversion-fields">
+            <label class="field-label" for="amount">ค่าที่ต้องการแปลง<input id="amount" class="amount-input" type="number" inputmode="decimal" value="1" step="any" autocomplete="off" /></label>
+            <div class="unit-row">
+              <label class="field-label" for="from-unit">จาก<select id="from-unit"></select></label>
+              <button id="swap-button" class="icon-button" type="button" title="สลับหน่วย" aria-label="สลับหน่วย">⇄</button>
+              <label class="field-label" for="to-unit">เป็น<select id="to-unit"></select></label>
+            </div>
+          </div>
+          <div class="result-box" aria-live="polite"><p class="result-label">ผลลัพธ์</p><p class="result-value" id="result-value">1 เมตร</p><button id="copy-button" class="copy-button" type="button"><span aria-hidden="true">▣</span> คัดลอกผลลัพธ์</button></div>
+        </div>
+        <aside class="side-panel">
+          <div class="side-heading"><div><p class="section-kicker">02 / ทางลัด</p><h2>แปลงบ่อย</h2></div><span class="shortcut-mark" aria-hidden="true">✦</span></div>
+          <div class="shortcuts" id="shortcuts"></div>
+          <div class="recent-block"><div class="recent-heading"><h3>รายการล่าสุด</h3><button id="clear-history" type="button">ล้าง</button></div><div id="history-list" class="history-list"><p class="empty-state">ยังไม่มีรายการแปลงหน่วย</p></div></div>
+        </aside>
+      </section>
+      <footer class="page-footer"><span>LOCAL-FIRST TOOL</span><span>หน่วยมาตรฐานสากลและหน่วยที่ใช้ทั่วไป</span></footer>
+    </main>
+  </body>
+</html>
