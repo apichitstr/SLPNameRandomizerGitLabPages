@@ -3,7 +3,7 @@ pages:
   image: alpine:latest
   script:
     - mkdir -p public
-    - cp -r index.html unit-converter.html styles.css converter.js app.js A.txt B.txt C.txt public/
+    - cp -r index.html unit-converter.html hub.css styles.css converter.js app.js A.txt B.txt C.txt public/
   artifacts:
     paths:
       - public
