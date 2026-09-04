@@ -5,7 +5,7 @@ const I18N = {
   en: {
     pageTitle: "Name Randomizer (A+C+B)",
     langLabel: "Language",
-    tagText: "GitLab Pages Ready",
+    tagText: "GitHub Pages Ready",
     mainTitle: "3-Part Name Randomizer",
     subHtml: "Tick <strong>A</strong>, <strong>B</strong>, <strong>C</strong> freely. If all are selected, pattern becomes <strong>A+C+B</strong>.",
     modeLabel: "Random pattern (A/B/C checkboxes)",
@@ -19,7 +19,7 @@ const I18N = {
     groupC: "Group C",
     resultTitle: "Generated results",
     copyBtn: "Copy all",
-    noteText: "Note: GitLab Pages is a static site, so files cannot be overwritten on the server directly. Save buttons download .txt files to your device.",
+    noteText: "Note: GitHub Pages is a static site, so files cannot be overwritten on the server directly. Save buttons download .txt files to your device.",
     alerts: {
       emptySelection: "Please select at least one option: A, B, or C.",
       missingList: "List {key} is empty. Please add items first.",
@@ -34,7 +34,7 @@ const I18N = {
   th: {
     pageTitle: "โปรแกรมสุ่มชื่อ (A+C+B)",
     langLabel: "ภาษา",
-    tagText: "พร้อมใช้งานบน GitLab Pages",
+    tagText: "พร้อมใช้งานบน GitHub Pages",
     mainTitle: "โปรแกรมสุ่มชื่อ 3 ท่อน",
     subHtml: "เลือกติ๊ก <strong>A</strong>, <strong>B</strong>, <strong>C</strong> ได้อิสระ เช่น ติ๊กครบจะเป็น <strong>A+C+B</strong>",
     modeLabel: "รูปแบบการสุ่ม (checkbox A/B/C)",
@@ -48,7 +48,7 @@ const I18N = {
     groupC: "ชุด C",
     resultTitle: "ผลลัพธ์การสุ่ม",
     copyBtn: "คัดลอกทั้งหมด",
-    noteText: "หมายเหตุ: บน GitLab Pages เป็น static site จึงไม่สามารถเขียนไฟล์ทับบนเซิร์ฟเวอร์ได้โดยตรง ปุ่ม Save จะดาวน์โหลดไฟล์ .txt ลงเครื่องแทน",
+    noteText: "หมายเหตุ: บน GitHub Pages เป็น static site จึงไม่สามารถเขียนไฟล์ทับบนเซิร์ฟเวอร์ได้โดยตรง ปุ่ม Save จะดาวน์โหลดไฟล์ .txt ลงเครื่องแทน",
     alerts: {
       emptySelection: "กรุณาติ๊กเลือกอย่างน้อย 1 ช่อง: A, B หรือ C",
       missingList: "รายการ {key} ว่างอยู่ กรุณาเติมข้อมูล",
